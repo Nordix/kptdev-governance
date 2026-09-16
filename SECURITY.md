@@ -1,4 +1,4 @@
-# Security Policy for the kpt organisation
+# Security Policy for the kpt organization
 
 We're extremely grateful for users and security researchers that report vulnerabilities to the kpt open source
 community. 
@@ -10,18 +10,18 @@ Please do not report security vulnerabilities through public GitHub issues.
 
 ## Supported Versions
 
-The kpt community has *n - 1* version support policy for all artefacts released.
+The kpt community has *n - 1* version support policy for all artifacts released.
 
 ## Reporting a Vulnerability
 
-### When should you?
+### When should you report?
 
 - You think you discovered a potential security vulnerability in kpt.
 - You are unsure how a vulnerability affects kpt.
 - You think you discovered a vulnerability in a dependency of kpt. For those projects, please leverage their reporting
   policy.
 
-### When you should not?
+### When you should not report?
 
 - You need assistance in configuring kpt for security - please discuss this on one of the
   [kpt communication channels](https://kpt.dev/#communication).
@@ -45,7 +45,7 @@ Vulnerabilities should be reported as a new security advisory in the repository 
 | .project | [In the .project repository](https://github.com/kptdev/.project/security/advisories) |
 
 
-1. Open the new Security Advisory 
+1. Open a new Security Advisory 
 
     * Please include the information listed below (as much as you can provide) to help us better understand the nature
       and scope of the possible issue:
