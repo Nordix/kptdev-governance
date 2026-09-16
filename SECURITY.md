@@ -28,9 +28,9 @@ The kpt community has *n - 1* version support policy for all artefacts released.
 - You need help applying security related updates.
 - Your issue is not security related.
 
-### Please use the process below to report a vulnerability the repositories in the kpt organization
+### Please use the process below to report a vulnerability for the repositories in the kpt organization
 
-Vulnerabilities reported as new security advisory to the repository affected by the vulnerability.
+Vulnerabilities should be reported as a new security advisory in the repository affected by the vulnerability.
 
 | Repository | Advisory Reporting |
 |------------|--------------------|
