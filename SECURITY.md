@@ -11,6 +11,7 @@ Please do not report security vulnerabilities through public GitHub issues.
 ## Supported Versions
 
 The kpt community has *n - 1* version support policy for all artifacts released.
+All fixes are fixed forward, meaning that no branches of older versions are maintained.
 
 ## Reporting a Vulnerability
 
@@ -77,8 +78,8 @@ For information regarding the security of this project please join our
 ## Public Disclosure Timing
 
 A public disclosure date is negotiated by the kpt project maintainers and the bug submitter. We prefer to fully disclose
-the bug as soon as possible once a user mitigation is available. It is reasonable to delay disclosure when the bug or
-the fix is not yet fully understood, the solution is not well-tested, or for vendor coordination. The timeframe for
-disclosure is from immediate (especially if it's already publicly known) to a few weeks. For a vulnerability with a
+the bug as soon as possible once a fix or an user mitigation is available. It is reasonable to delay disclosure when the 
+bug or the fix is not yet fully understood, the solution is not well-tested, or for vendor coordination. The timeframe
+for disclosure is from immediate (especially if it's already publicly known) to a few weeks. For a vulnerability with a
 straightforward mitigation, we expect report date to disclosure date to be on the order of 7 days. The kpt project
 maintainer team holds the final say when setting a disclosure date.
