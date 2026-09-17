@@ -10,8 +10,7 @@ Please do not report security vulnerabilities through public GitHub issues.
 
 ## Supported Versions
 
-The kpt community has *n - 1* version support policy for all artifacts released.
-All fixes are fixed forward, meaning that no branches of older versions are maintained.
+All fixes are fixed forward, meaning that no branches of older releases are supported.
 
 ## Reporting a Vulnerability
 
