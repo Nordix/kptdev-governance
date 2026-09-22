@@ -26,9 +26,35 @@ published, they use fully specified versions (`vX.Y.Z`) and do not use floating 
 ## Latest Tag
 
 The `latest` tag is supported on all container images and points to the most
-recent release. However, it provides no compatibility or stability guarantee.
-The `latest` tag should only be used for testing and development, not in
-production environments.
+recent development build. It is updated on every merge to the `main` branch.
+The `latest` tag provides no compatibility or stability guarantee and should
+only be used for testing and development, never in production environments.
+
+## Stable Tag
+
+The `stable` tag is supported on all container images and points to the most
+recent non-prerelease release. It is updated on every GitHub Release that is
+not marked as a pre-release.
+
+- Pre-releases (e.g. `vX.Y.Z-beta.N`, `vX.Y.Z-rc.N`, or any release that GitHub
+  marks as a pre-release) publish their own immutable version tag including the
+  pre-release identifier (e.g. `v1.2.3-beta.1`, not `v1.2.3`). The automated
+  release process MUST NOT move the `stable` tag for a pre-release.
+- If a repository has not yet published any non-prerelease release, `stable` is
+  not published until the first such release exists.
+- `stable` normally follows the latest release automatically. Re-pointing
+  `stable` to an older release is a manual, permission-gated action performed by
+  a maintainer.
+
+Unlike immutable `vX.Y.Z` tags, `stable` is mutable and moves forward with each
+new non-prerelease release. Pin the full `vX.Y.Z` version for reproducible
+builds.
+
+### Scope: images and binaries
+
+The mutable `latest` and `stable` tags apply to container images. CLI binaries
+and other release archives continue to use immutable `vX.Y.Z` tags and the
+floating `vX.Y` / `vX` tags.
 
 ## Breaking Changes
 
@@ -97,5 +123,6 @@ compatibility SHOULD be retained.
   deterministic, reproducible builds.
 - Use floating tags (`vX.Y`, `vX`) when you want to automatically receive
   security and bug fixes with less maintenance overhead.
-- Avoid using the `latest` tag in production.
+- Avoid using the `latest` (development) tag in production; prefer `stable` or a
+  pinned `vX.Y.Z` version.
 - Read release notes before upgrading, especially across minor versions.
